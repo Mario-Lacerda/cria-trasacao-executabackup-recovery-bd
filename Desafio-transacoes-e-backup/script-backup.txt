@@ -1,0 +1,17 @@
+Entra na pasta do MySQL Server: cd C:\ProgramFiles\MySQL\MySQL Server 8.0\bin
+
+Executa o backup da estrutura e dados do banco de dados shop/ cenário de ecommerce: 
+mysqldump --user root --password --databases shop > backup-estrutural-e-de-dados-ecommerce.sql
+
+Executa somente backup dos dados persistidos no banco de dados: 
+mysqldump --no-create-info --user root --password --databases shop > backup-dados-ecommerce.sql
+
+Executa somente backup da estrutura do banco de dados:
+mysqldump --no-data --user root --password --databases shop > backup-estrutural-ecommerce.sql
+
+Executa o backup  da estrutura, dos dados, das procedures e triggers do banco de dados shop/cenário de ecommerce:
+Abrange tudo o que foi feito nesse banco de dados ao longo da formação.
+mysqldump --procedures --triggers --user root --password --databases shop > backup-ecommerce-procedures-e-triggers.sql
+
+Executa o backup completo do banco de dados oficina:
+mysqldump --user root --password --databases oficina > backup-completo-oficina.sql

@@ -1,0 +1,8 @@
+Entra na pasta do MySQL Server:
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+Executa o recovery a partir do arquivo SQL da estrutura e dados do banco de dados ecommerce:
+mysql --user root --password < backup-estrutural-e-de-dados-ecommerce.sql
+
+Executa o backup do arquivo SQL da estrutura e dados do banco de dados oficina:
+mysql --user root --password < backup-estrutural-e-de-dados-ecommerce.sql
